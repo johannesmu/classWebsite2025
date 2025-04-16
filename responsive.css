@@ -1,0 +1,38 @@
+@media screen and ( max-width: 400px) {
+    .menu-button {
+        display: block;
+    }
+    #search {
+        width: 100%;
+    }
+    .main-navigation {
+        flex-wrap: wrap;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    .main-navigation a {
+        min-width: 100%;
+    }
+    .logo {
+        width: 70px;
+    }
+    .main-navigation.open {
+        max-height: 50vh;
+    }
+    .categories {
+        grid-template-columns: 1fr;
+    }
+    .card-image {
+        aspect-ratio: 4/3;
+    }
+    .featured {
+        max-width: 95vw;
+    }
+    .contact {
+        max-width: 95vw;
+    }
+    #contact-form {
+        width: 95vw;
+    }
+}

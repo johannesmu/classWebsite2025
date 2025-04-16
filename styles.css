@@ -9,10 +9,7 @@
 body {
     background-color: var(--air-superiority-blue);
     margin: 0px;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .logo {
@@ -27,6 +24,7 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     flex-wrap: wrap;
+    font-family: Silkscreen, sans-serif;
 }
 
 #search {
@@ -66,31 +64,87 @@ body {
 .main-navigation a:hover {
     background-color: var(--alloy-orange);
 }
-.main-footer {
+
+.menu-button {
+    font-size: 24px;
+    background-color: transparent;
+    color: var(--alloy-orange);
+    border: 1px solid var(--alloy-orange);
+    display: none;
+}
+.featured {
+    max-width: 80vw;
+    margin: auto;
+}
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+.card {
+    border: 1px solid var(--isabelline);
+    background-color: var(--isabelline);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card-image {
+    max-width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border: 1px solid var(--black);
+}
+.card-content {
+    padding: 15px;
+}
+.card-button {
+    display: block;
+    padding: 12px;
     background-color: var(--black);
     color: var(--isabelline);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    min-height: 8rem;
-    padding: 1rem;
-}
-.social-nav {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    min-width: 25vw;
-    justify-content: space-between;
-}
-.social-nav a {
-    color: inherit;
-    padding: 0.5rem;
-    background-color: var(--alloy-orange);
-    width: 1.5rem;
-    height: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
+    text-align: center;
     text-decoration: none;
+}
+.main-footer {
+    margin-top: 2em;
+    padding: 1em;
+    min-height: 150px;
+    background-color: var(--alloy-orange);
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+}
+.social a {
+    text-decoration: none;
+    font-size: 24px;
+    color: var(--isabelline)
+}
+.copyright {
+    text-align: center;
+    color: var(--isabelline);
+}
+
+.contact {
+    max-width: 80vw;
+    margin: auto;
+}
+#map {
+    width: 100%;
+}
+#contact-form {
+    width: 50%;
+    margin: auto;
+}
+#contact-form label {
+    display: block;
+}
+#contact-form input {
+    display: block;
+    width: 100%;
+}
+#contact-form textarea {
+    display: block;
+    width: 100%;
 }
