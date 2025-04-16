@@ -21,7 +21,7 @@
 
 <body>
     <header class="main-header">
-        <a href="index.html">
+        <a href="index.php">
             <img class="logo" src="images/PGHlogo.png">
         </a>
         <button type="button" class="menu-button">
@@ -34,13 +34,13 @@
             </button>
         </form>
         <nav class="main-navigation">
-            <a href="index.html">
+            <a href="index.php">
                 <!-- <i class="fa-solid fa-house"></i> -->
                 Home
             </a>
             <a href="products.html">Products</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <a href="about.php">About</a>
+            <a href="contact.php">Contact</a>
         </nav>
     </header>
     <main>
