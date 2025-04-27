@@ -148,3 +148,13 @@ body {
     display: block;
     width: 100%;
 }
+
+.Products { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    max-width: 1000px;
+    margin: auto;
+    
+
+}
